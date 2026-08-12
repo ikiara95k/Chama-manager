@@ -17,5 +17,7 @@
     "tailwindcss": "latest",
     "vite": "latest"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@vitejs/plugin-react": "latest"
+  }
 }
