@@ -1,0 +1,20 @@
+{
+  "name": "Chama Manager",
+  "short_name": "Chama Manager",
+  "description": "Manage chama members, contributions, loans, repayments and reminders.",
+  "lang": "en-KE",
+  "start_url": "/Chama-manager/",
+  "scope": "/Chama-manager/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F7F3E7",
+  "theme_color": "#1F4D3E",
+  "icons": [
+    {
+      "src": "/Chama-manager/icons/chama-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
