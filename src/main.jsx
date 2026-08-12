@@ -2,12 +2,20 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import ChamaManager from './ChamaManager.jsx';
 import './styles.css';
+import { hydrateLocalState, installCloudSync } from './cloudStorage.js';
 
-createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <ChamaManager />
-  </React.StrictMode>
-);
+async function startApp() {
+  await hydrateLocalState();
+  installCloudSync();
+
+  createRoot(document.getElementById('root')).render(
+    <React.StrictMode>
+      <ChamaManager />
+    </React.StrictMode>
+  );
+}
+
+startApp();
 
 if ('serviceWorker' in navigator && import.meta.env.PROD) {
   window.addEventListener('load', () => {
