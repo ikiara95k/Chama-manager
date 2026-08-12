@@ -3,21 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@tailwindcss/vite": "latest",
-    "lucide-react": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "recharts": "latest",
-    "tailwindcss": "latest",
-    "vite": "latest"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react": "latest"
-  }
+  "scripts": {"dev":"vite","build":"vite build","preview":"vite preview"},
+  "dependencies": {"@supabase/supabase-js":"latest","@tailwindcss/vite":"latest","lucide-react":"latest","react":"latest","react-dom":"latest","recharts":"latest","tailwindcss":"latest","vite":"latest"},
+  "devDependencies": {"@vitejs/plugin-react":"latest"}
 }
